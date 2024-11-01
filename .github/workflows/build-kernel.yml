@@ -36,7 +36,6 @@ jobs:
           export PATH=$GITHUB_WORKSPACE/clang/bin:${PATH}
           args="                  ARCH=arm \
                                   O=../out \
-                                  ${{ env.BUILD_ARGS }} \
                                   CROSS_COMPILE=$GITHUB_WORKSPACE/aarch64-linux-android-4.9/bin/arm-eabi- \
                                   CROSS_COMPILE_ARM32=$GITHUB_WORKSPACE/arm-linux-androideabi-4.9/bin/arm-eabi- "
           cd kernel-source
